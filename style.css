@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 26.5px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav .nav-item {
+    float: left;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0 0 10px 025px;
+    background-color: #fff;
+    color: #33f;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}
+
+.nav .nav-item a {
+    color: #33f;
+}
+
+.nav .nav-item a:hover {
+    border-bottom: 4px solid #b6b5b5d0;
+    color: #000;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.banner {
+    margin-bottom: 10px;
+}
+
+.banner .banner-left {
+    width: 73%;
+    float: left;
+}
+
+.banner .banner-right {
+    width: 27%;
+    float: right;
+}
+
+.advisory {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    background-color: #ffff90;
+    padding: 3px 3px 3px 3px;
+    font-size: 13px;
+}
+
+.advisory a {
+    color: #33f;
+}
+
+#what-is-this {
+    font-size: 23px;
+    font-family: georgia, serif;
+    color: #6f6fc4;
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+
+.content {
+    margin-bottom: 13px;
+}
+
+.content-left {
+    width: 75%;
+    float: left;
+}
+
+.content-right {
+    width: 25%;
+    float: right;
+}
+
+.content .content-right #box {
+    margin-left: 41px;
+    height: 200px;
+    width: 160px;
+    border: 1px solid #afaff8;
+}
+
+.content .content-right #box .box-heading {
+    background-color: #cdccff;
+}
+
+.content .content-right #box #box-result {
+    background-color: #cdccff;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#desc2 a {
+    color: #6f6fc4;
+}
+
+#desc2 a:hover {
+    color: #000;
+}
+
+.suggest {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.suggest .suggest-left {
+    width: 13%;
+    float: left;
+}
+
+.suggest .suggest-left .suggest-name {
+    font-size: 13px;
+}
+
+.suggest .suggest-right {
+    width: 87%;
+    float: right;
+}
+
+.suggest .suggest-right .suggest-heading {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #6f6fc4;
+}
+
+.suggest .suggest-right .suggest-heading:hover {
+    color: #000;
+}
+
+.suggest .suggest-right .suggest-item {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.suggest .suggest-right .suggest-item a {
+    color: #6f6fc4;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer a {
+    color: #6f6fc4;
+}
+
+.footer a:hover {
+    color: #000;
+}

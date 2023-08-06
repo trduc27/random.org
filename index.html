@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2:500,600" />
+    <title>RANDOM.ORG - True Random Number Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li class="nav-item""><a href="" style=" border-bottom: 4px solid #b6b5b5d0; color: #000;">Home</a></li>
+            <li class="nav-item"><a href="">Games</a></li>
+            <li class="nav-item"><a href="">Numbers</a></li>
+            <li class="nav-item"><a href="">List & More</a></li>
+            <li class="nav-item"><a href="">Drawings</a></li>
+            <li class="nav-item"><a href="">Web Tools</a></li>
+            <li class="nav-item"><a href="">Statistics</a></li>
+            <li class="nav-item"><a href="">Testimonials</a></li>
+            <li class="nav-item"><a href="">Learn More</a></li>
+            <li class="nav-item"><a href="">Login</a></li>
+        </ul>
+        <div class="banner clearfix">
+            <div class="banner-left">
+                <img src="./img/rdo-logo-475x70.png" alt="" id="banner">
+            </div>
+            <div class="banner-right">
+                <p id="desc" style="color: #9393ff; font-size: 11px;">Search RANDOM.ORG</p>
+                <input type="text" id="input" style="width: 148px;">
+                <button id="search-btn" style="padding: 0 8px; margin-bottom: 10px;">Search</button>
+                <p id="true-random" style="font-size: 14px"><strong>True Random Number Service</strong></p>
+            </div>
+        </div>
+        <hr style="height: 0.1px; background-color: #9393ff; border: none;">
+        <div class="advisory">
+            <p><strong>Advisory</strong>: We only operate services from the RANDOM.ORG domain. Other sites that claim to
+                be operated by us are impostors. If in doubt, <a href="">contact us.</a></p>
+        </div>
+        <h2 id="what-is-this">What's this fuss about <em style="font-family: georgia, serif;">true</em> randomness?</h2>
+        <div class="content clearfix">
+            <div class="content-left">
+                <p id="desc1" style="font-size: 12.8px; margin-bottom: 20px; line-height: 22px;">
+                    Perhaps you have wondered how predictable machines like computers can generate randomness. In
+                    reality, most random numbers used in computer programs are pseudo-random, which means they are
+                    generated in a predictable fashion using a mathematical formula. This is fine for many purposes, but
+                    it may not be random in the way you expect if you're used to dice rolls and lottery drawings.
+                </p>
+                <p id="desc2" style="font-size: 12.8px; line-height: 22px;">
+                    RANDOM.ORG offers <em>true</em> random numbers to anyone on the Internet. The randomness comes from
+                    atmospheric noise, which for many purposes is better than the pseudo-random number algorithms
+                    typically used in computer programs. People use RANDOM.ORG for holding drawings, lotteries and
+                    sweepstakes, to drive online games, for scientific applications and for art and music. The service
+                    has existed since 1998 and was built by <a href="">Dr Mads Haahr</a> of the <a href="">School of
+                        Computer Science and
+                        Statistics</a> at <a href="">Trinity College, Dublin</a> in Ireland. Today, RANDOM.ORG is
+                    operated by <a href="">Randomness and
+                        Integrity Services Ltd.</a>
+                </p>
+            </div>
+            <div class="content-right clearfix">
+                <div id="box">
+                    <div class="box-heading">
+                        <p id="heading" style="text-align: center; font-size: 13px;">True Random Number Generator</p>
+                    </div>
+                    <div class="min" style="display: flex; margin-top: 10px;">
+                        <span style="font-size: 12px; margin-left: 3.5px; opacity: 0.6;">Min:</span>
+                        <input type="number" id="input-min" value="1" style="width: 80px; margin-left: 15px; padding: 0 3px;">
+                    </div>
+                    <div class="max" style="display: flex; margin-top: 5px; margin-bottom: 5px;">
+                        <span style="font-size: 12px; margin-left: 4px; opacity: 0.6;">Max:</span>
+                        <input type="number" id="input-max" value="100" style="width: 80px; margin-left: 12px; padding: 0 3px;">
+                    </div>
+                    <button id="generate" onclick="generate()"
+                        style="padding: 1px 7px; margin-left: 3.5px; display: block;">Generate</button>
+                    <span style="margin-left: 3.5px; opacity: 0.8; font-size: 12px;">Result:</span>
+                    <div id="box-result">
+                        <p id="result" style="text-align: center; font-size: 16px;"><strong>32</strong></p>
+                        <div class="min-to-max" style="display: flex; justify-content: center; font-size: 12px;">
+                            <p id="min" style="text-align: center; font-size: 11px; margin-right: 4px;">Min: 1</p>
+                            <p id="max" style="text-align: center; font-size: 11px;">Max: 100</p>
+                        </div>
+                        <p id="date" style="text-align: center; font-size: 11px;">2023-08-04 13:06:35 UTC</p>
+                    </div>
+                    <p style="font-size: 8px; float: right; margin-right: 4px; margin-top: 9px; color: #9b9a9a;">Powered
+                        by <a href="#home" style="color: #9b9a9a; text-decoration: underline;">RANDOM.ORG</a></p>
+                </div>
+            </div>
+        </div>
+        <hr style=" height: 0.1px; background-color: #9393ff; border: none;">
+        <!-- FREE services 1 -->
+        <div class="free-services1 suggest clearfix">
+            <div class="free-services1-left suggest-left">
+                <div class="free-services1-name suggest-name">
+                    <p id="free-services1-name" style="background-color: #d4ffca; display: inline; padding: 2px 4px;">
+                        FREE services</p>
+                </div>
+            </div>
+            <div class="free-services1-right suggest-right">
+                <p class="free-services1-heading suggest-heading">Games and Lotteries</p>
+                <p class="free-services1-item suggest-item"><a href="">Lottery Quick Pick</a> is perhaps the Internet's
+                    most popular
+                    with over 280 lotteries</p>
+                <p class="free-services1-item suggest-item"><a href="">Keno Quick Pick</a> for the popular game played
+                    in
+                    many countries
+                </p>
+                <p class="free-services1-item suggest-item"><a href="">Coin Flipper</a> will give you heads or tails in
+                    many currencies
+                </p>
+                <p class="free-services1-item suggest-item"><a href="">Dice Roller</a> does exactly what it says on the
+                    tin</p>
+                <p class="free-services1-item suggest-item"><a href="">Playing Card Shuffler</a> will draw cards from
+                    multiple shuffled
+                    decks</p>
+                <p class="free-services1-item suggest-item"><a href="">Birdie Fund Generator</a> will create birdie
+                    holes
+                    for golf
+                    courses</p>
+            </div>
+        </div>
+        <hr style = "height: 1.4px; background-color: #9393ff; border: none;">
+        <!-- PAID service -->
+        <div class="paid-services suggest clearfix">
+            <div class="paid-services-left suggest-left">
+                <div class="paid-services-name suggest-name">
+                    <p id="paid-services-name" style="background-color: #ccf;; display: inline; padding: 2px 4px;">PAID
+                        service</p>
+                </div>
+            </div>
+            <div class="paid-services-right suggest-right">
+                <p class="paid-services-heading suggest-heading">Random Drawings</p>
+                <p class="paid-services-item suggest-item"><a href="">Q3.1 in the FAQ</a> explains how to pick a winner
+                    for your
+                    giveaway for FREE</p>
+                <p class="paid-services-item suggest-item"><a href="">Third-Party Draw Service</a> is the premier
+                    solution to holding
+                    random drawings online</p>
+                <p class="paid-services-item suggest-item"><a href="">Step by Step Guide</a> explains how to hold a
+                    drawing with the
+                    Third-Party Draw Service</p>
+                <p class="paid-services-item suggest-item"><a href="">Step by Step Video</a> shows how to hold a drawing
+                    with the
+                    Third-Party Draw Service/p>
+                <p class="paid-services-item suggest-item"><a href="">Price Calculator</a> tells exactly how much your
+                    drawing will
+                    cost</p>
+                <p class="paid-services-item suggest-item"><a href="">Drawing FAQ</a> answers common questions about
+                    holding drawings
+                </p>
+                <p class="paid-services-item suggest-item"><a href="">Public Records</a> shows all completed drawings
+                    going back five
+                    years</p>
+                <p class="paid-services-item suggest-item"><a href="">Drawing Result Widget</a> can be used to publish
+                    your winners on
+                    your web page</p>
+                <p class="paid-services-item suggest-item"><a href="">Multi-Round Giveaway Service</a> for verified
+                    video giveaways</p>
+            </div>
+        </div>
+        <hr style= "height: 1.4px; background-color: #9393ff; border: none;">
+        <!-- FREE services 2 -->
+        <div class="free-services2 suggest clearfix">
+            <div class="free-services2-left suggest-left">
+                <div class="free-services2-name suggest-name">
+                    <p id="free-services2-name" style="background-color: #d4ffca; display: inline; padding: 2px 4px;">
+                        FREE services</p>
+                </div>
+            </div>
+            <div class="free-services2-right suggest-right">
+                <p class="free-services2-heading suggest-heading">Numbers</p>
+                <p class="free-services2-item suggest-item"><a href="">Integer Generator</a> makes random numbers in
+                    configurable
+                    intervals</p>
+                <p class="free-services2-item suggest-item"><a href="">Sequence Generator</a> will randomize an integer
+                    sequence of your
+                    choice</p>
+                <p class="free-services2-item suggest-item"><a href="">Integer Set Generator</a> makes sets of
+                    non-repeating integers
+                </p>
+                <p class="free-services2-item suggest-item"><a href="">Gaussian Generator</a> makes random numbers to
+                    fit
+                    a normal
+                    distribution</p>
+                <p class="free-services2-item suggest-item"><a href="">Decimal Fraction Generator</a> makes numbers in
+                    the [0,1] range
+                    with configurable decimal places</p>
+                <p class="free-services2-item suggest-item"><a href="">Raw Random Bytes</a> are useful for many
+                    cryptographic purposes
+                </p>
+            </div>
+        </div>
+        <hr style=" height: 0.1px; background-color: #9393ff; border: none;">
+        <!-- FREE services 3 -->
+        <div class="free-services3 suggest clearfix">
+            <div class="free-services3-left suggest-left">
+                <div class="free-services3-name suggest-name">
+                    <p id="free-services3-name" style="background-color: #d4ffca; display: inline; padding: 2px 4px;">
+                        FREE services</p>
+                </div>
+            </div>
+            <div class="free-services3-right suggest-right">
+                <p class="free-services3-heading suggest-heading">Lists and Strings and Maps, Oh My!</p>
+                <p class="free-services3-item suggest-item"><a href="">List Randomizer</a> will randomize a list of
+                    anything you have
+                    (names, phone numbers, etc.)</p>
+                <p class="free-services3-item suggest-item"><a href="">String Generator</a> makes random alphanumeric
+                    strings</p>
+                <p class="free-services3-item suggest-item"><a href="">Password Generator</a> makes secure passwords for
+                    your Wi-Fi or
+                    that extra Gmail account</p>
+                <p class="free-services3-item suggest-item"><a href="">Clock Time Generator</a> will pick random times
+                    of
+                    the day</p>
+                <p class="free-services3-item suggest-item"><a href="">Calendar Date Generator</a> will pick random days
+                    across nearly
+                    three and a half millennia</p>
+                <p class="free-services3-item suggest-item"><a href="">Geographic Coordinate Generator</a> will pick a
+                    random spot on
+                    our planet's surface</p>
+                <p class="free-services3-item suggest-item"><a href="">Bitmaps</a> in black and white</p>
+                <p class="free-services3-item suggest-item"><a href="">Hexadecimal Color Code Generator</a> will pick
+                    color codes, for
+                    example for use as web colors</p>
+                <p class="free-services3-item suggest-item"><a href="">Pregenerated Files</a> contain large amounts of
+                    downloadable
+                    random bits</p>
+                <p class="free-services3-item suggest-item"><a href="">Pure White Audio Noise</a> for composition or
+                    just
+                    to test your
+                    audio equipment</p>
+                <p class="free-services3-item suggest-item"><a href="">Jazz Scales</a> to practice improvisation for
+                    students of jazz
+                    guitar</p>
+                <p class="free-services3-item suggest-item"><a href="">Samuel Beckett's</a> randomly generated short
+                    prose</p>
+                <p class="free-services3-item suggest-item"><a href="">DNA Protein Sequence Randomizer</a> (at Bio-Web)
+                </p>
+            </div>
+        </div>
+        <hr style=" height: 0.1px; background-color: #9393ff; border: none;">
+        <!-- FREE services 4 -->
+        <div class="free-servies4 suggest clearfix">
+            <div class="free-servies4-left suggest-left">
+                <div class="free-servies4-name suggest-name">
+                    <p id="free-servies4-name" style="background-color: #d4ffca; display: inline; padding: 2px 4px;">
+                        FREE services</p>
+                </div>
+            </div>
+            <div class="free-servies4-right suggest-right">
+                <p class="free-servies4-heading suggest-heading">Web Tools and Widgets for Your Pages!</p>
+                <p class="free-servies4-item suggest-item"><a href="">Integer Widget Wizard</a> will put a
+                    mini-RANDOM.ORG on your web
+                    page or blog</p>
+                <p class="free-servies4-item suggest-item"><a href="">Draw Widget Wizard</a> will put the result of a
+                    paid drawing on
+                    your web page or blog</p>
+                <p class="free-servies4-item suggest-item"><a href="">HTTP API</a> to get true random numbers into your
+                    own code</p>
+                <p class="free-servies4-item suggest-item"><a href="">Guidelines</a> describe how to avoid getting in
+                    trouble</p>
+                <p class="free-servies4-item suggest-item"><a href="">Banned Hosts</a> lists who didn't behave and have
+                    been blocked
+                </p>
+            </div>
+        </div>
+        <hr style=" height: 0.1px; background-color: #9393ff; border: none;">
+        <!-- Learn -->
+        <div class="learn suggest clearfix">
+            <div class="learn-left suggest-left">
+                <div class="learn-name suggest-name">
+                    <img src="./img/learn.png" alt="" style="width: 64px; height: 64px;">
+                </div>
+            </div>
+            <div class="learn-right suggest-right">
+                <p class="learn-heading suggest-heading">Learn about Randomness</p>
+                <p class="learn-item suggest-item"><a href="">Introduction to Randomness</a> explains what true
+                    random numbers
+                    are and why they're interesting</p>
+                <p class="learn-item suggest-item"><a href="">History</a> explains how RANDOM.ORG started and
+                    where it is today
+                </p>
+                <p class="learn-item suggest-item"><a href="">Many Testimonials</a> from folks who have found
+                    very creative
+                    uses for random numbers</p>
+                <p class="learn-item suggest-item"><a href="">Acknowledgements</a> to all the generous folks who
+                    have helped
+                    out</p>
+                <p class="learn-item suggest-item"><a href="">Quotations</a> about randomness in science, the
+                    arts and in life
+                    generally</p>
+                <p class="learn-item suggest-item"><a href="">Media Coverage and Scientific Citations</a> lists
+                    popular print
+                    and scientific mention of the service</p>
+                <p class="learn-item suggest-item"><a href="">News</a> about the latest additions to the site
+                </p>
+            </div>
+        </div>
+        <hr style=" height: 0.1px; background-color: #9393ff; border: none;">
+        <!-- Statistics-->
+        <div class="statistics suggest clearfix">
+            <div class="statistics-left suggest-left">
+                <div class="statistics-name suggest-name">
+                    <img src="./img/graph.png" alt="" style="width: 64px; height: 64px;">
+                </div>
+            </div>
+            <div class="statistics-right suggest-right">
+                <p class="statistics-heading suggest-heading">Statistics</p>
+                <p class="statistics-item suggest-item"><a href="">Real-Time Statistics</a> show how the generator is
+                    performing
+                    right now</p>
+                <p class="statistics-item suggest-item"><a href="">Statistical Analysis</a> explains how you test
+                    random numbers for
+                    randomness</p>
+                <p class="statistics-item suggest-item"><a href="">Bit Tally</a> shows how much randomness has been
+                    generated since
+                    1998 (hint: lots!)</p>
+                <p class="statistics-item suggest-item"><a href="">Your Quota</a> tells how many random bits you have
+                    left for today
+                </p>
+            </div>
+        </div>
+        <hr style=" height: 0.1px; background-color: #9393ff; border: none;">
+        <!-- Contact and Help -->
+        <div class="help suggest clearfix">
+            <div class="help-left suggest-left">
+                <div class="help-name suggest-name">
+                    <img src="./img/help.gif" alt="" style="width: 64px; height: 64px;">
+                </div>
+            </div>
+            <div class="help-right suggest-right">
+                <p class="help-heading suggest-heading">Contact and Help</p>
+                <p class="help-item suggest-item"><a href="">FAQ</a> contains answers to frequently asked
+                    questions</p>
+                <p class="help-item suggest-item"><a href="">Newsletter</a> appears at random intervals, but do
+                    sign up</p>
+                <p class="help-item suggest-item"><a href="">Contact Details</a> in case you want to get in
+                    touch</p>
+            </div>
+        </div>
+        <hr style=" height: 0.1px; background-color: #9393ff; border: none;">
+    </div>
+    <div class="footer">
+        <p>© 1998-2023 RANDOM.ORG</p>
+        <p>Follow us: <a href="">Twitter</a> | <a href="">Mastodon</a></p>
+        <p><a href="">Terms and Conditions</a></p>
+        <p><a href="">About Us</a></p>
+    </div>
+    <input type="text" id="new-num" style="width: 50px;" value="">
+    <button onclick="add()" id="add">Thêm</button>
+    <script src="main.js"></script>
+</body>
+
+</html>
